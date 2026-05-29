@@ -5,3 +5,8 @@
 - CDO (Cliate Data Operators)
   - If the CDO module is available: `module load cdo`
   - Install using conda: `conda install -c conda-forge cdo`
+
+#### How to use:
+- Set a case date in `era5_cdsapi_down_all.py`
+- `python era5_cdsapi_down_all.py`
+- The final GRIB data for MPAS-A will be saved in `data_all`.

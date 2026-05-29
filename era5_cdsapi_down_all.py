@@ -5,7 +5,7 @@ import os
 # Download ERA5 from ECMWF (3d pl, sfc) and merge for MPAS-A forcing
 #######################################################################
 
-# Date
+# Date (user modification)
 
 year = "2026"
 month = "05"
@@ -39,6 +39,8 @@ data_format = "grib"
 
 #######################################################################
 #######################################################################
+
+# Required vars for MPAS-A input
 
 dataset = "reanalysis-era5-pressure-levels"
 request = {
@@ -152,8 +154,3 @@ os.system(cmd)
 cmd = "rm era5_inv_temp.grib"
 os.system(cmd)
 
-# Set time axis for the invariants
-
-# Merge GRIB files
-#cmd = "cdo merge "+fname_3d+" "+fname_sfc+" "+fname_invar+" "+fname_all
-#os.system(cmd)
