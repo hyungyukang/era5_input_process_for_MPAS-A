@@ -1,1 +1,1 @@
-# era5_input_process_for_MPAS-A
+### Download ERA5 from ECMWF (3d pl, sfc) and merge for MPAS-A forcing
